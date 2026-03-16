@@ -33,6 +33,8 @@ void mu3_io_config_load(
     cfg->vk_right_3 = GetPrivateProfileIntW(L"io4", L"right3", 'L', filename);
     cfg->vk_left_menu = GetPrivateProfileIntW(L"io4", L"leftMenu", 'U', filename);
     cfg->vk_right_menu = GetPrivateProfileIntW(L"io4", L"rightMenu", 'O', filename);
+    cfg->lever_min = GetPrivateProfileIntW(L"io4", L"ontrollerLeverMin", 100, filename);
+    cfg->lever_max = GetPrivateProfileIntW(L"io4", L"ontrollerLeverMax", 600, filename);
 
     cfg->cab_led_output_pipe = GetPrivateProfileIntW(L"led", L"cabLedOutputPipe", 1, filename);
     cfg->cab_led_output_serial = GetPrivateProfileIntW(L"led", L"cabLedOutputSerial", 0, filename);

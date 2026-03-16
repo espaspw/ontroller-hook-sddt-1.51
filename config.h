@@ -22,6 +22,8 @@ struct mu3_io_config {
     uint8_t vk_right_3;
     uint8_t vk_left_menu;
     uint8_t vk_right_menu;
+    int32_t lever_min;
+    int32_t lever_max;
 
     // Which ways to output LED information are enabled
     bool cab_led_output_pipe;

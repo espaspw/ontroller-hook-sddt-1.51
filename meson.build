@@ -5,6 +5,9 @@ mu3io_lib = static_library(
     implicit_include_directories : false,
     dependencies : [
         xinput_lib,
+        cc.find_library('winusb'),
+        cc.find_library('setupapi'),
+        cc.find_library('shlwapi'),
     ],
     sources : [
         'config.c',
